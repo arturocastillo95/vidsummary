@@ -1,0 +1,36 @@
+# .gitignore
+
+# Python related
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environments
+venv/
+*.venv
+.venv/
+
+# Jupyter Notebook files
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+
+# Temp folder
+temp/
+
+# Whisperx ASR tool (if downloaded to the project directory)
+whisperx/
+
+# Output files
+*.mp4
+*.wav
+*.srt
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
