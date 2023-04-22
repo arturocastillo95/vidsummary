@@ -106,7 +106,7 @@ def create_filtered_dict(summaries, subtitles_dict):
             else:
                 #Check if the subtitle is similar to any of next 3 subtitles indexes in the subtitles_dict
                 similar_sub = False
-                for i in range(0, 3):
+                for i in range(0, 8):
                     if last_sub_index + i < len(subtitles_dict):
                         if sentence_similarity.similar_sentences(subtitle, list(subtitles_dict.keys())[last_sub_index + i]):
                             filtered_dict[list(subtitles_dict.keys())[last_sub_index + i]] = subtitles_dict[list(subtitles_dict.keys())[last_sub_index + i]]
